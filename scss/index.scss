@@ -42,11 +42,13 @@ body {
   .card-stats {
     display: flex;
     font-size: 0.8em;
+
     justify-content: space-between;
     color: $soft-blue;
     font-weight: 300;
     border-block-end: 0.05em solid $soft-blue;
     padding-block-end: 1em;
+    margin-block-end: 1em;
     .left {
       color: $cyan;
       display: inline-flex;
@@ -60,6 +62,25 @@ body {
       margin-inline-end: 0.4em;
     }
   }
+  .card-foot {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 12.5%;
+      border-radius: 50%;
+      border: 1px solid $white;
+      margin-right: 0.8em;
+    }
+    .credit-line {
+      color: $soft-blue;
+      font-weight: 300;
+
+      .creator {
+        color: $white;
+      }
+    }
+  }
 }
 
 footer {
@@ -67,9 +88,14 @@ footer {
   bottom: 0.5em;
   left: 50%;
   transform: translateX(-50%);
+  color: $white;
+  font-size: 11px;
 }
-
-@media screen and (max-height: 600px) {
+a {
+  text-decoration: none;
+  color: $soft-blue;
+}
+@media screen and (max-height: 620px) {
   footer {
     display: none;
   }
