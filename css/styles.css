@@ -23,7 +23,7 @@ body {
   width: 340px;
 }
 .card .image-container {
-  background-image: url("./images/image-equilibrium.jpg");
+  background-image: url("../images/image-equilibrium.jpg");
   background-size: cover;
   height: 16em;
   overflow: hidden;
