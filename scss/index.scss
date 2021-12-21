@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+@import "reset";
+@import "variables";
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: $font-size;
+  height: 100vh;
+  background-color: $very-dark-blue-background;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.card {
+  background-color: $very-dark-blue-card;
+  padding: 1.4em;
+  border-radius: 1em;
+  width: 340px;
+  .image-container {
+    background-image: url("/images/image-equilibrium.jpg");
+    background-size: cover;
+    height: 16em;
+    overflow: hidden;
+    border-radius: 0.4em;
+    margin-block-end: 1.2em;
+  }
+  .card-title {
+    color: $white;
+    font-size: 1.2em;
+    margin-block-end: 0.8em;
+    letter-spacing: 0.05em;
+  }
+  .card-description {
+    color: $soft-blue;
+    font-weight: 300;
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-block-end: 1em;
+  }
+  .card-stats {
+    display: flex;
+    font-size: 0.8em;
+    justify-content: space-between;
+    color: $soft-blue;
+    font-weight: 300;
+    border-block-end: 0.05em solid $soft-blue;
+    padding-block-end: 1em;
+    .left {
+      color: $cyan;
+      display: inline-flex;
+      align-items: center;
+    }
+    .right {
+      display: inline-flex;
+      align-items: center;
+    }
+    img {
+      margin-inline-end: 0.4em;
+    }
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0.5em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-height: 600px) {
+  footer {
+    display: none;
+  }
+}
